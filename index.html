@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+  <link rel="stylesheet" style="text/css" href="assets/style/style.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="nav">
+      <li><a class="button" title="Button_1" href="#">First Nav</a></li>
+      <li><a class="button" title="Button_2" href="#">Second Nav 2</a></li>
+      <li><a class="button" title="Button_3" href="#">Third Nav 3 3</a></li>
+      <li><a class="button" title="Button_4" href="#">Fourth Nav 4</a></li>
+        <nav>
+          <ul class="subNav defaultHidden" id="Button_1">
+            <li><a href="#">SubNav1</a></li>
+            <li><a href="#">SubNav2</a></li>
+            <li><a href="#">SubNav3</a></li>
+            <li><a href="#">SubNav4</a></li>
+            <li><a href="#">SubNav5</a></li>
+            <li><a href="#">SubNav6</a></li>
+            <li><a href="#">SubNav7</a></li>
+            <li><a href="#">SubNav8</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul class="subNav defaultHidden" id="Button_2">
+            <li><a href="#">2-1</a></li>
+            <li><a href="#">2-2</a></li>
+            <li><a href="#">2-2</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul class="subNav defaultHidden" id="Button_3">
+            <li><a href="#">3-1</a></li>
+            <li><a href="#">3-2</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul class="subNav defaultHidden" id="Button_4">
+            <li><a href="#">4-1</a></li>
+          </ul>
+        </nav>
+    </ul>
+  </nav>
+
+
+
+  <script src="assets/javascript/jquery-2.1.4.js"></script>
+  <script src="assets/javascript/java.js"></script>
+
+  <!--since we load my_library.js before java.js, we can use it b/c it's in the global scope
+  that is created before java.js.  Then java.js gets added to the global scope.  IF they both
+have the same function name in it (ex: greet), then it's going to use the one from java.js
+b/c that is the second/final one (last one win)-->
+</body>
